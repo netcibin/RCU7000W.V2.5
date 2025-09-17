@@ -1,0 +1,263 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+     <title>RCU-7000W</title>
+  <script src="script/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body onload="onLoad();">
+  <header>
+      <div id="brand"><a href="/">RCU-7000W</a></div>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="changeDisplay('info')">Info</a></li>
+          <li><a href="#" onclick="changeDisplay('relays')">Relays</a></li>
+          <li><a href="#" onclick="changeDisplay('sensors')">Sensors</a></li>
+          <li><a href="#" onclick="changeDisplay('settings')">Settings</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="MobileMenuChange(this)">
+        <div class="menu1"></div>
+        <div class="menu2"></div>
+        <div class="menu3"></div>
+        <ul class="mobile-menu">
+          <li><a href="#" onclick="changeDisplay('info')">Info</a></li>
+          <li><a href="#" onclick="changeDisplay('relays')">Relays</a></li>
+          <li><a href="#" onclick="changeDisplay('sensors')">Sensors</a></li>
+          <li><a href="#" onclick="changeDisplay('settings')">Settings</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+<div id="content">
+    
+<div id="info" class="menu_content">
+  <h3>Info</h3>
+  <div id="info-container">
+    <div id="info-text">
+        <p style="font-size: 18px;">RCU-7000W, the cutting-edge revolutionizing hospitality management Room Control Unit.</p>
+        <span>Powered by an Xtensa dual-core MCU, this sleek device boasts 520 KiB of RAM and 448 KiB of ROM, ensuring swift and efficient operation. Equipped with 802.11 b/g/n Wi-Fi and Bluetooth v4.2, it seamlessly integrates into any network environment, offering both BR/EDR and BLE capabilities. With 2 UART pins and RS485 Full Duplex Modbus support, RCU-7000W facilitates seamless communication with a variety of devices. Its 5 DI inputs and 7 DO outputs provide extensive control options, while the inclusion of 1 SPDT relay output and 13 DTDP relay outputs enhances versatility and functionality. Tailored for King Size Hotel Rooms, RCU-7000W combines advanced technology with user-friendly design to streamline room management and enhance guest experience.</span>
+        <p style="font-size: 12px;">Welcome to the future of hospitality control</p>
+    </div>
+</div>
+  
+</div>
+
+<div id="relays" class="menu_content">
+  <h3>Relays</h3>
+    <div class="switch">
+      <div class="switch-item">
+        <input id="toggle-btn1" class="toggle" type="checkbox" %CHECK1%>
+        <label for="toggle-btn1"></label>
+        <span class="component-name">Relay1: </span>
+        <span id="state1">%STATE1%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn2" class="toggle" type="checkbox" %CHECK2%>
+        <label for="toggle-btn2"></label>
+        <span class="component-name">Relay2: </span>
+        <span id="state2">%STATE2%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn3" class="toggle" type="checkbox" %CHECK3%>
+        <label for="toggle-btn3"></label>
+        <span class="component-name">Relay3: </span>
+        <span id="state3">%STATE3%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn4" class="toggle" type="checkbox" %CHECK4%>
+        <label for="toggle-btn4"></label>
+        <span class="component-name">Relay4: </span>
+        <span id="state4">%STATE4%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn5" class="toggle" type="checkbox" %CHECK5%>
+        <label for="toggle-btn5"></label>
+        <span class="component-name">Relay5: </span>
+        <span id="state5">%STATE5%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn6" class="toggle" type="checkbox" %CHECK6%>
+        <label for="toggle-btn6"></label>
+        <span class="component-name">Relay6: </span>
+        <span id="state6">%STATE6%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn7" class="toggle" type="checkbox" %CHECK7%>
+        <label for="toggle-btn7"></label>
+        <span class="component-name">Relay7: </span>
+        <span id="state7">%STATE7%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn8" class="toggle" type="checkbox" %CHECK8%>
+        <label for="toggle-btn8"></label>
+        <span class="component-name">Relay8: </span>
+        <span id="state8">%STATE8%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn9" class="toggle" type="checkbox" %CHECK9%>
+        <label for="toggle-btn9"></label>
+        <span class="component-name">Relay9: </span>
+        <span id="state9">%STATE9%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn10" class="toggle" type="checkbox" %CHECK10%>
+        <label for="toggle-btn10"></label>
+        <span class="component-name">Relay10: </span>
+        <span id="state10">%STATE10%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn11" class="toggle" type="checkbox" %CHECK11%>
+        <label for="toggle-btn11"></label>
+        <span class="component-name">Relay11: </span>
+        <span id="state11">%STATE11%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn12" class="toggle" type="checkbox" %CHECK12%>
+        <label for="toggle-btn12"></label>
+        <span class="component-name">Relay12: </span>
+        <span id="state12">%STATE12%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn13" class="toggle" type="checkbox" %CHECK13%>
+        <label for="toggle-btn13"></label>
+        <span class="component-name">Relay13: </span>
+        <span id="state13">%STATE13%</span>
+      </div>
+      <div class="switch-item">
+        <input id="toggle-btn14" class="toggle" type="checkbox" %CHECK14%>
+        <label for="toggle-btn14"></label>
+        <span class="component-name">Relay14: </span>
+        <span id="state14">%STATE14%</span>
+      </div>
+    </div>
+  </div>  <!-- Relay Section Ends here -->
+  <div id="sensors" class="menu_content">
+  <div class="container">
+    <div class="item row1">
+        <img src="images/thermometer-half.png" class="icon">
+        <span>Temperature: <span id="temperature">--</span>&deg;C</span>
+        <span>Humidity: <span id="humidity">--</span>%</span>
+    </div>
+    <div class="item row2">
+      <img src="images/user.png" class="icon">
+      <span>Presence Status: <span id="pr_status">--</span></span>
+  </div>
+  <div class="item row3">
+    <img src="images/key.png" class="icon">
+    <span>Key Tag Status: <span id="key_status">--</span></span>
+    <span>Updated by: <span id="update_key">--</span></span>
+    <label class="switch_a">
+      <input type="checkbox" id="key_toggle" onchange="toggleKeyTag(this)">
+      <span class="slider"></span>
+  </label>
+</div>
+<div class="item row4">
+  <img src="images/wifi.png" class="icon">
+  <span>WiFi Status: <span id="wifi_status">--</span></span>
+  <span>IP Address: <span id="ip_address">--</span></span>
+  <span>Signal Level: <span id="wifi_signal">--</span>dB</span>
+</div>
+<div class="item row5">
+  <img src="images/snowflake.png" class="icon">
+  <span>AC Status: <span id="ac_status">--</span></span>
+  <span>Set Point: <span id="set_temp">--</span>&deg;C</span>
+  <span>FAN Speed: <span id="fan_speed">--</span></span>
+</div>
+<div class="item row6">
+  <img src="images/ban.png" class="icon">
+  <span>DND Status: <span id="dnd_status">--</span></span>
+  <label class="switch_a">
+    <input type="checkbox" id="dnd_toggle" onchange="toggleDnd(this)">
+    <span class="slider"></span>
+</label>
+</div>
+<div class="item row7">
+  <img src="images/broom.png" class="icon">
+  <span>MUR Status: <span id="mur_status">--</span></span>
+  <label class="switch_a">
+    <input type="checkbox" id="mur_toggle" onchange="toggleMur(this)">
+    <span class="slider"></span>
+</label>
+</div>
+<div class="item row8">
+  <span>Master State: <span id="master_status">--</span></span>
+  <label class="switch_a">
+    <input type="checkbox" id="master_toggle" onchange="toggleMaster(this)">
+    <span class="slider"></span>
+</label>
+</div>
+</div>
+</div>
+
+  <div id="settings" class="menu_content">
+    <h3>Settings</h3>
+    <p id="settings-text">RCU Settings</p>
+    <!-- Settings Code goes here -->
+    <div>
+      <button class="restart-button" onclick="restartRCU()">Reboot</button>
+  </div>
+  <!-- Setpoint Input Field and Button -->
+  <div style="margin-top: 20px;">
+    <input type="number" id="setpointInput" min="16" max="30" placeholder="23">
+    <button onclick="updateSetpoint()">Update Setpoint</button>
+</div>
+<!-- Default Setpoint Input Field and Button -->
+<div style="margin-top: 20px;">
+  <input type="number" id="defaultsetpointInput" min="16" max="30" placeholder="24">
+  <button onclick="updateDefaultSetpoint()">Update Default Setpoint</button>
+  <span id="defaultSetMsg"></span>
+</div>
+<div id="wifi-setup">
+  <h2>Wi-Fi Setup</h2>
+
+<!-- Scan button first -->
+<button id="scanButton" onclick="scanNetworks()">Scan Networks</button>
+<span id="loading" style="display:none;">🔍 Scanning...</span>
+
+<br><br>
+
+<!-- Available Networks Dropdown -->
+<label for="networks" class="wifi-label">Choose Network:</label>
+<select id="networks" onchange="selectNetwork()">
+    <option value="">-- Select Network --</option>
+</select>
+
+<br><br>
+
+<!-- Manual SSID Input -->
+<label for="ssidInput" class="wifi-label">Or Enter SSID Manually:</label>
+<input type="text" id="ssidInput" placeholder="Enter Wi-Fi SSID manually">
+
+<br><br>
+
+<!-- Password Input -->
+<label for="password" class="wifi-label">Wi-Fi Password:</label>
+<input type="password" id="password" placeholder="Enter Wi-Fi Password">
+
+<br><br>
+
+<!-- Connect Button -->
+<button onclick="saveWiFi()">Connect</button>
+
+</div>
+<div>
+  <h3>MQTT Configuration</h3>
+    <input type="text" id="server" placeholder="MQTT Server">
+    <input type="number" id="port" placeholder="Port">
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="mqttpassword" placeholder="Password">
+    <button onclick="saveMqttSettings()">Save Settings</button>
+    <p class="status" id="mqtt-status">MQTT: Disconnected</p>
+
+    <p class="status" id="ws-status">WebSocket: Disconnected</p>
+    <p class="status" id="status"></p>
+</div>
+  </div>
+</div>
+</main>
+<footer>
+  <p>&copy; 2025 HanVan Technologies. All rights reserved.</p>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,420 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;  /* Ensure full height */
+  margin: 0;  /* Remove default margin */
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+body {
+  background-color: #025d8f;
+  color: rgb(93, 93, 93);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*/
+main {
+  flex: 1;  /* Pushes the footer down */
+}
+
+header {
+  padding: 0 20px;
+  background-color: #1e1e20;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+header a {
+  text-decoration: none;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #b9b9b9;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: rgb(255, 255, 255);
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .menu1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .menu2 {
+  opacity: 0;
+}
+
+.open .menu3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {margin-bottom: 10px; border: #4e1b92;}
+
+.mobile-menu li a{color: rgb(152, 152, 152);}
+
+@media only screen and (max-width: 600px) {
+  header nav {display: none;}
+  #hamburger-icon {display: block;}
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  color:#bdbbba;
+}
+
+#info-container {
+  background: linear-gradient(135deg, #f6f7f9, #ffffff);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#info-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#info-text p {
+  margin: 20px 0;
+}
+#info-text span {
+  display: block;
+  font-size: 15px;
+  margin: 10px 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.switch {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 20px;
+  z-index: 999;
+}
+
+.switch-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.component-name {
+  color: #727171;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.toggle {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(135deg, #a8a8a8, #e0e0e0);
+  border-radius: 40px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 22px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle:checked + label {
+  background: linear-gradient(135deg, #379e35, #24c224);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.toggle:checked + label::before {
+  transform: translateX(40px);
+}
+
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    
+    p {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+ 
+ .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.item {
+    background: linear-gradient(135deg, #f6f7f9, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.item span {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+    margin: 5px 0;
+}
+.row1 { grid-column: span 2; }
+.row4 { grid-column: span 2; }
+/* .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #007bff;
+} */
+.icon {
+    width: 3em;
+    height: 3em;
+}
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.restart-button:hover {
+  background-color: darkred;
+}
+
+ /* Unique Style for Custom Toggle starts here */
+ .custom-toggle-label {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+}
+
+.custom-toggle-label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #888;
+  transition: 0.4s;
+  border-radius: 30px;
+  border: 2px solid #444;
+}
+
+.custom-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .custom-toggle-slider {
+  background-color: #ff6600;
+  border-color: #e65c00;
+}
+
+input:checked + .custom-toggle-slider:before {
+  transform: translateX(30px);
+}
+/* Unique Style for Custom Toggle ends here */
+
+/* Ensure that only the specific label with class 'switch_a' is styled as a toggle switch */
+.switch_a label {
+  display: inline-block;
+  padding: 0; /* Reset padding that might be set globally */
+  margin: 0; /* Reset margin */
+  font-size: 0; /* Make sure text inside the label doesn't cause unwanted spacing */
+  width: none;
+  height: none;
+  background: none;
+  border-radius: none;
+  position: none;
+  cursor: none;
+  margin-right: none;
+  box-shadow: none;
+  transition: none;
+}
+
+.switch_a {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 44px;
+  background: none;
+  border-radius: none;
+  position: none;
+  cursor: none;
+  margin-right: none;
+  box-shadow: none;
+  transition: none;
+}
+
+/* Slider styling */
+.switch_a input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch_a .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.switch_a .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+/* When checked, change background color */
+.switch_a input:checked + .slider {
+  background-color: #2196F3;
+}
+
+/* Move the slider to the right when checked */
+.switch_a input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.wifi-label {
+  all: unset; /* Resets all inherited styles */
+  display: block;
+  font-size: 16px;
+  color: black;
+  cursor: default; /* Prevents toggle behavior */
+}
+
+#wifi-setup label::before {
+  content: none !important; /* Removes the white circle */
+}
